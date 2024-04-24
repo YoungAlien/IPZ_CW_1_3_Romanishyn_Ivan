@@ -77,6 +77,19 @@ fun SignInScreen() {
                     .padding(top = 72.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
+                OutlinedTextField(
+                )
+
+                OutlinedTextField(
+                )
+
+                Spacer(modifier = Modifier.height(16.dp))
+                Text(text = result)
+                Spacer(modifier = Modifier.height(16.dp))
+
+                Button(
+                ) {
+                }
             }
         }
     )
