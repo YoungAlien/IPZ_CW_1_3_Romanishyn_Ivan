@@ -78,9 +78,21 @@ fun SignInScreen() {
                 horizontalAlignment = Alignment.CenterHorizontally
             ) {
                 OutlinedTextField(
+                    value = email,
+                    onValueChange = { email = it },
+                    label = { Text("Ел.Пошта") },
+                    isError = email.text.isEmpty(),
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
                 )
 
                 OutlinedTextField(
+                    value = password,
+                    onValueChange = { password = it },
+                    label = { Text("Пароль") },
+                    isError = password.text.isEmpty(),
+                    singleLine = true,
+                    modifier = Modifier.fillMaxWidth()
                 )
 
                 Spacer(modifier = Modifier.height(16.dp))
