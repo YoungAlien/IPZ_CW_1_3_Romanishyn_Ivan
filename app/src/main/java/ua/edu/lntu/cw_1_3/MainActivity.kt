@@ -100,6 +100,18 @@ fun SignInScreen() {
                 Spacer(modifier = Modifier.height(16.dp))
 
                 Button(
+                    onClick = {
+                        if (email.text.isNotEmpty() && password.text.isNotEmpty()) {
+                            result = "Успішна авторизація"
+                        } else {
+                            if (email.text.isEmpty()) {
+                                result = "Помилка авторизації: Помилка для поля \"Ел.Пошта\""
+                            } else if (password.text.isEmpty()) {
+                                result = "Помилка авторизації: Помилка для поля \"Пароль\""
+                            }
+                        }
+                    },
+                    modifier = Modifier.fillMaxWidth()
                 ) {
                 }
             }
