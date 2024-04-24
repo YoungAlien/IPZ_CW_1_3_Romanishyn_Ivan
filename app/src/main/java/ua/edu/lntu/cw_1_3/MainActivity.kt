@@ -63,6 +63,16 @@ fun SignInScreen() {
     var password by remember { mutableStateOf(TextFieldValue()) }
     var result by remember { mutableStateOf("") }
 
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text("Авторизація") },
+            )
+        },
+        content = {
+
+        }
+    )
 }
 
 @Preview(showBackground = true)
