@@ -59,6 +59,10 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun SignInScreen() {
+    var email by remember { mutableStateOf(TextFieldValue()) }
+    var password by remember { mutableStateOf(TextFieldValue()) }
+    var result by remember { mutableStateOf("") }
+
 }
 
 @Preview(showBackground = true)
