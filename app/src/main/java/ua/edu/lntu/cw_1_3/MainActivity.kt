@@ -113,6 +113,7 @@ fun SignInScreen() {
                     },
                     modifier = Modifier.fillMaxWidth()
                 ) {
+                    Text("Авторизація")
                 }
             }
         }
