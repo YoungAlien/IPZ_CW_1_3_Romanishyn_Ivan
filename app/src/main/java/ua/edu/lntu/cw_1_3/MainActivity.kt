@@ -70,7 +70,14 @@ fun SignInScreen() {
             )
         },
         content = {
-
+            Column(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(16.dp)
+                    .padding(top = 72.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
+            ) {
+            }
         }
     )
 }
